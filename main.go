@@ -10,6 +10,7 @@ func main() {
 	code := readFile()
 	parse(code)
 }
+
 func parse(code string) {
 	var memory [65536]int
 	pointer := 0
