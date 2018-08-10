@@ -8,7 +8,12 @@ import (
 
 func main() {
 	code := readFile()
-	fmt.Println(code)
+	parse(code)
+}
+func parse(code string) {
+	for _, v := range code {
+		fmt.Println(v)
+	}
 }
 
 func readFile() string {
